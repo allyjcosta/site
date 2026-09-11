@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Allyson Costa's electrical engineering portfolio: analog design, embedded systems, instrumentation, and signal processing at CU Boulder.">
+    <title>Allyson Costa | Electrical Engineering</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header>
+        <h1>Allyson Costa</h1>
+        <p>Electrical Engineering Student | University of Colorado Boulder</p>
+        <nav aria-label="Main navigation">
+            <a href="#projects">Projects</a>
+            <a href="#about">About</a>
+            <a href="#resume">Resume</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+    <main id="main">
+        <section class="intro" aria-labelledby="intro-title">
+            <h2 id="intro-title">Engineering Projects Archive</h2>
+            <p>Here is a collection of projects I have completed as an electrical engineering student including personal, academic, and research projects.</p>
+        </section>
+        <section id="projects" aria-label="Projects">
+            <article class="project green">
+                <div class="project-gallery" role="group" aria-label="Noise spectrometer images">
+                    <figure>
+                        <a href="images/noise-spectrometer1.png"><img src="images/noise-spectrometer1.png" alt="Noise spectrometer time domain signal" loading="lazy"></a>
+                        <figcaption>Time domain signal</figcaption>
+                    </figure>
+                    <figure>
+                        <a href="images/noise-spectrometer2.png"><img src="images/noise-spectrometer2.png" alt="Noise spectrometer live spectrum" loading="lazy"></a>
+                        <figcaption>Circuit block diagram</figcaption>
+                    </figure>
+                    <figure>
+                        <a href="images/noise-spectrometer3.png"><img src="images/noise-spectrometer3.png" alt="Noise spectrometer SBB circuit" loading="lazy"></a>
+                        <figcaption>SBB circuit</figcaption>
+                    </figure>
+                    <figure>
+                        <a href="images/noise-spectrometer4.png"><img src="images/noise-spectrometer4.png" alt="Noise spectrometer Johnson noise results" loading="lazy"></a>
+                        <figcaption>Johnson noise results</figcaption>
+                    </figure>
+                </div>
+                <div>
+                    <h3>Noise Spectrometer</h3>
+                    <p>Developed a low-cost software-defined instrument for measuring electronic component noise from 0.1 Hz to 10 kHz.</p>
+                    <ul>
+                        <li>Low-noise analog front-end design</li>
+                        <li>Python data acquisition</li>
+                        <li>FFT and spectral analysis</li>
+                        <li>Johnson noise measurements from 1 kΩ to 1 MΩ</li>
+                    </ul>
+                    <p class="tags">Python · Analog Design · FFT · Instrumentation</p>
+                </div>
+            </article>
+            <article class="project lime">
+                <img src="images/mlcc.png" alt="MLCC characterization experiment">
+                <div>
+                    <h3>MLCC Nonlinearity Characterization</h3>
+                    <p>Automated characterization of multilayer ceramic capacitor nonlinearity using capacitance-versus-voltage measurements and harmonic distortion analysis.</p>
+                    <ul>
+                        <li>Analog Discovery 3 automation</li>
+                        <li>Python and WaveForms SDK</li>
+                        <li>Capacitance-voltage measurement</li>
+                        <li>FFT harmonic analysis</li>
+                    </ul>
+                    <p class="tags">Python · Signal Processing · Instrumentation</p>
+                </div>
+            </article>
+            <article class="project blue project-motor">
+                <div>
+                    <h3>Closed-Loop Robot Motor Control</h3>
+                    <p>Designed and implemented a closed-loop DC motor control system using encoder feedback.</p>
+                    <ul>
+                        <li>PWM generation</li>
+                        <li>Encoder feedback</li>
+                        <li>I-compensator control</li>
+                        <li>Motor driver circuitry</li>
+                    </ul>
+                </div>
+                <div class="project-media">
+                    <img src="images/robot2.png" alt="Motor control system" loading="lazy">
+                    <figure>
+                        <video controls playsinline preload="metadata" aria-label="Robot motor control demo">
+                            <source src="videos/robot1-demo.mov" type="video/quicktime">
+                            Your browser does not support video playback.
+                        </video>
+                        <figcaption><a href="videos/robot1-demo.mov">Open light following robot demo video</a></figcaption>
+                    </figure>
+                    <figure>
+                        <video controls playsinline preload="metadata" aria-label="Robot motor control demo 2">
+                            <source src="videos/robot3.mov" type="video/quicktime">
+                            Your browser does not support video playback.
+                        </video>
+                        <figcaption><a href="videos/robot3.mov">Open second robot demo video</a></figcaption>
+                    </figure>
+                </div>
+            </article>
+            <article class="project synthesizer">
+                <div class="project-image" data-photo="digital-synthesizer.jpg" role="img" aria-label="Placeholder for digital synthesizer photo">
+                    <span>04 / DIGITAL SYNTHESIZER</span>
+                    <span class="image-label">Project photo coming soon</span>
+                </div>
+                <div>
+                    <h3>Digital Synthesizer</h3>
+                    <p>Project details coming soon.</p>
+                </div>
+            </article>
+        </section>
+        <section id="about" aria-labelledby="about-title">
+            <h2 id="about-title">About</h2>
+            <p>I first became interested in engineering when I was 23 years old because of my love for math. The decision to go to engineering school required me to change many aspects of my life. Before university, I worked full-time as a Barista and manager at a family-owned coffee shop, while producing electronic music in my free time.</p>
+            <p>I was not sure what I wanted to study at first, but engineering seemed to be the only option I really felt drawn to. Now, as an undergraduate at CU Boulder I know that electrical engineering was the perfect fit for me! I love learning and understanding how physical circuits work, designing physical systems, and relating them to analytical models.</p>
+            <p>This degree is more creative and fulfilling than I ever imagined. I hope to add plenty more projects to this archive!</p>
+        </section>
+        <section id="resume" aria-labelledby="resume-title">
+            <h2 id="resume-title">Resume</h2>
+            <a class="button" href="Allyson_Costa_Resume.pdf" target="_blank" rel="noopener">View Resume (PDF)</a>
+        </section>
+        <section id="contact" aria-labelledby="contact-title">
+            <h2 id="contact-title">Contact</h2>
+            <p><a href="mailto:allyjcosta@gmail.com">allyjcosta@gmail.com</a></p>
+            <p><a href="https://linkedin.com/in/allyson-costa11/">linkedin.com/in/allyson-costa11/</a></p>
+            <p><a href="https://github.com/allyjcosta">github.com/allyjcosta</a></p>
+        </section>
+    </main>
+</body>
+</html>
