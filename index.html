@@ -26,6 +26,21 @@
             <p>Here is a collection of projects I have completed as an electrical engineering student including personal, academic, and research projects.</p>
         </section>
         <section id="projects" aria-label="Projects">
+            <article class="project lime">
+                <img src="images/mlcc.png" alt="MLCC characterization experiment">
+                <div>
+                    <p class="current-project"><span aria-hidden="true">★</span> Current Project</p>
+                    <h3>MLCC Nonlinearity Characterization</h3>
+                    <p>I am currently designing an automated characterization system for multilayer ceramic capacitor nonlinearity using capacitance-versus-voltage measurements and harmonic distortion analysis.</p>
+                    <ul>
+                        <li>Analog Discovery 3 automation</li>
+                        <li>Python and WaveForms SDK</li>
+                        <li>Capacitance-voltage measurement</li>
+                        <li>FFT harmonic analysis</li>
+                    </ul>
+                    <p class="tags">Python · Signal Processing · Instrumentation</p>
+                </div>
+            </article>
             <article class="project green">
                 <div class="project-gallery" role="group" aria-label="Noise spectrometer images">
                     <figure>
@@ -57,30 +72,11 @@
                     <p class="tags">Python · Analog Design · FFT · Instrumentation</p>
                 </div>
             </article>
-            <article class="project lime">
-                <img src="images/mlcc.png" alt="MLCC characterization experiment">
-                <div>
-                    <h3>MLCC Nonlinearity Characterization</h3>
-                    <p>Automated characterization of multilayer ceramic capacitor nonlinearity using capacitance-versus-voltage measurements and harmonic distortion analysis.</p>
-                    <ul>
-                        <li>Analog Discovery 3 automation</li>
-                        <li>Python and WaveForms SDK</li>
-                        <li>Capacitance-voltage measurement</li>
-                        <li>FFT harmonic analysis</li>
-                    </ul>
-                    <p class="tags">Python · Signal Processing · Instrumentation</p>
-                </div>
-            </article>
             <article class="project blue project-motor">
                 <div>
                     <h3>Closed-Loop Robot Motor Control</h3>
-                    <p>Designed and implemented a closed-loop DC motor control system using encoder feedback.</p>
-                    <ul>
-                        <li>PWM generation</li>
-                        <li>Encoder feedback</li>
-                        <li>I-compensator control</li>
-                        <li>Motor driver circuitry</li>
-                    </ul>
+                    <p>Implemented 555 timer PWM generation and encoder feedback for speed sensing, an I-compensator, motor direction control, and motor driver circuits in a closed-loop system. Built and debugged hardware with benchtop oscilloscopes and SPICE simulation.</p>
+                    <p>Programmed movement instructions using Arduino Nano Every. Added light-sensing resistors and programmed the robot to follow light.</p>
                 </div>
                 <div class="project-media">
                     <img src="images/robot2.png" alt="Motor control system" loading="lazy">
@@ -101,13 +97,67 @@
                 </div>
             </article>
             <article class="project synthesizer">
-                <div class="project-image" data-photo="digital-synthesizer.jpg" role="img" aria-label="Placeholder for digital synthesizer photo">
-                    <span>04 / DIGITAL SYNTHESIZER</span>
-                    <span class="image-label">Project photo coming soon</span>
+                <div class="project-media">
+                    <figure>
+                        <video controls playsinline preload="metadata" aria-label="Digital synthesizer demo">
+                            <source src="videos/synth1.mov" type="video/quicktime">
+                            Your browser does not support video playback.
+                        </video>
+                        <figcaption><a href="videos/synth1.mov">Open digital synthesizer demo video</a></figcaption>
+                    </figure>
                 </div>
                 <div>
                     <h3>Digital Synthesizer</h3>
-                    <p>Project details coming soon.</p>
+                    <p>Designed and implemented a digital synthesizer on an FPGA, combining digital logic design with my interest in music production. The project generated square wave tones digitally at different frequencies corresponding to user input. The note information and frequency are displayed. The project also uses a quadrature encoder for PWM volume control and the Boolean FPGA board LEDs.</p>
+                    <p>Through the project, I gained experience with FPGA development and digital signal generation.</p>
+                </div>
+            </article>
+            <article class="project blue">
+                <div class="project-gallery" role="group" aria-label="NASA Space Grant Payload images">
+                    <figure>
+                        <a href="images/payload1.png"><img src="images/payload1.png" alt="NASA Space Grant Payload photo 1" loading="lazy"></a>
+                    </figure>
+                    <figure>
+                        <a href="images/payload2.png"><img src="images/payload2.png" alt="NASA Space Grant Payload photo 2" loading="lazy"></a>
+                    </figure>
+                </div>
+                <div>
+                    <h3>NASA Space Grant Payload</h3>
+                    <p>I was the project lead on a five-person team that designed and built a balloon payload launched to the edge of space, collecting and transmitting live data using LoRa radio. The payload collected atmospheric data such as temperature and humidity and included an IMU.</p>
+                    <p>We also measured radiation using Geiger counters and used the same chemical reaction found in hand warmers as a heating element to regulate the temperature of electronic components at high altitudes.</p>
+                </div>
+            </article>
+            <article class="project lcd-game">
+                <div class="project-media">
+                    <figure>
+                        <video controls playsinline preload="metadata" aria-label="LCD side scrolling game demo">
+                            <source src="videos/LCD1.mp4" type="video/mp4">
+                            Your browser does not support video playback.
+                        </video>
+                        <figcaption><a href="videos/LCD1.mp4">Open LCD game demo video</a></figcaption>
+                    </figure>
+                </div>
+                <div>
+                    <h3>LCD Side Scrolling Game</h3>
+                    <p>Programmed a side-scrolling game on an LCD display using an Arduino Uno microcontroller. The game implemented player movement, obstacle generation, collision detection, and continuously updating obstacles. The user presses a button which causes the character to jump. The player must press the button at the right time to avoid an obstacle successfully.</p>
+                    <p>This project strengthened my experience with embedded programming, display control, I2C communication, and user input handling.</p>
+                </div>
+            </article>
+            <article class="project green">
+                <div class="project-media">
+                    <img src="images/MIDI2.jpeg" alt="Polyphonic MIDI keyboard" loading="lazy">
+                    <figure>
+                        <video controls playsinline preload="metadata" aria-label="Polyphonic MIDI keyboard demo">
+                            <source src="videos/MIDI1.mp4" type="video/mp4">
+                            Your browser does not support video playback.
+                        </video>
+                        <figcaption><a href="videos/MIDI1.mp4">Open MIDI keyboard demo video</a></figcaption>
+                    </figure>
+                </div>
+                <div>
+                    <h3>Polyphonic MIDI Keyboard</h3>
+                    <p>Created a polyphonic MIDI keyboard capable of detecting multiple simultaneous key presses with eight playable buttons and two additional buttons for shifting the octave. The project combined input processing and note mapping to create a MIDI instrument.</p>
+                    <p>This project gave me hands-on experience with user input handling and note mapping.</p>
                 </div>
             </article>
         </section>
