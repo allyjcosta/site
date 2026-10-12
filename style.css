@@ -19,7 +19,7 @@ body {
     line-height: 1.6;
 }
 header, main { max-width: 1050px; margin: auto; padding: 30px; }
-header { padding-top: 70px; padding-bottom: 166px; }
+header { padding-top: 70px; padding-bottom: 40px; }
 header h1 { font-size: 3rem; margin-bottom: 0; line-height: 1.2; }
 header p, .muted { color: var(--muted); }
 nav { display: flex; flex-wrap: wrap; justify-content: space-evenly; gap: 12px 25px; margin-top: 25px; padding-top: 20px; border-top: 2px solid var(--blue); }
