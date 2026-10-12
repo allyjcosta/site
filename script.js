@@ -1,3 +1,29 @@
+const projectsDropdown = document.querySelector(".projects-dropdown");
+if (projectsDropdown) {
+    projectsDropdown.addEventListener("click", (event) => {
+        const link = event.target.closest("a");
+        if (!link) return;
+        projectsDropdown.open = false;
+        const target = document.querySelector(link.getAttribute("href"));
+        if (target) {
+            target.setAttribute("tabindex", "-1");
+            target.focus({ preventScroll: true });
+        }
+    });
+    document.addEventListener("click", (event) => {
+        if (!projectsDropdown.contains(event.target)) projectsDropdown.open = false;
+    });
+    document.addEventListener("keydown", (event) => {
+        if (event.key === "Escape" && projectsDropdown.open) {
+            projectsDropdown.open = false;
+            projectsDropdown.querySelector("summary").focus();
+        }
+    });
+    document.addEventListener("focusin", (event) => {
+        if (!projectsDropdown.contains(event.target)) projectsDropdown.open = false;
+    });
+}
+
 // Show project photos when the corresponding files have been added.
 document.querySelectorAll(".project-image[data-photo]").forEach((placeholder) => {
     const image = new Image();

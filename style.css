@@ -25,6 +25,45 @@ header p, .muted { color: var(--muted); }
 nav { display: flex; flex-wrap: wrap; justify-content: space-evenly; gap: 12px 25px; margin-top: 25px; padding-top: 20px; border-top: 2px solid var(--blue); }
 nav a { color: var(--blue); font-size: 1.25rem; font-weight: bold; text-align: center; text-decoration: none; }
 nav a:hover { text-decoration: underline; }
+nav { position: relative; }
+.projects-dropdown summary {
+    color: var(--blue);
+    font-size: 1.25rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+.projects-dropdown summary:focus-visible {
+    outline: 3px solid var(--blue);
+    outline-offset: 5px;
+}
+.projects-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 10;
+    width: min(380px, 100%);
+    max-height: 60vh;
+    overflow-y: auto;
+    margin: 12px 0 0;
+    padding: 8px;
+    list-style: none;
+    background: #fff8fa;
+    border: 2px solid var(--blue);
+    border-radius: 10px;
+    box-shadow: 0 8px 24px #20252c26;
+}
+.projects-menu a {
+    display: block;
+    padding: 10px 12px;
+    font-size: 0.95rem;
+    text-align: left;
+    border-radius: 5px;
+}
+.projects-menu a:hover, .projects-menu a:focus-visible {
+    background: var(--blue);
+    color: white;
+}
+.project { scroll-margin-top: 24px; }
 a { color: var(--magenta); text-underline-offset: 4px; overflow-wrap: anywhere; }
 a:focus-visible { outline: 3px solid var(--blue); outline-offset: 5px; }
 section { padding: 30px 0; scroll-margin-top: 24px; }

@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Allyson Costa's electrical engineering portfolio: analog design, embedded systems, instrumentation, and signal processing at CU Boulder.">
     <title>Allyson Costa | Electrical Engineering</title>
-    <link rel="stylesheet" href="style.css?v=20260911-2">
-    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css?v=20260912-1">
+    <script src="script.js?v=20260912-1" defer></script>
 </head>
 <body>
     <a class="skip-link" href="#main">Skip to content</a>
@@ -14,7 +14,19 @@
         <h1>Allyson Costa</h1>
         <p>Electrical Engineering Student | University of Colorado Boulder</p>
         <nav aria-label="Main navigation">
-            <a href="#projects">Projects</a>
+            <details class="projects-dropdown">
+                <summary>Projects</summary>
+                <ul class="projects-menu">
+                    <li><a href="#projects">All projects</a></li>
+                    <li><a href="#mlcc">MLCC Nonlinearity Characterization</a></li>
+                    <li><a href="#noise-spectrometer">Noise Spectrometer</a></li>
+                    <li><a href="#robot-motor-control">Closed-Loop Robot Motor Control</a></li>
+                    <li><a href="#digital-synthesizer">Digital Synthesizer</a></li>
+                    <li><a href="#nasa-payload">NASA Space Grant Payload</a></li>
+                    <li><a href="#lcd-game">LCD Side Scrolling Game</a></li>
+                    <li><a href="#midi-keyboard">Polyphonic MIDI Keyboard</a></li>
+                </ul>
+            </details>
             <a href="#about">About</a>
             <a href="#resume">Resume</a>
             <a href="#contact">Contact</a>
@@ -26,8 +38,14 @@
             <p>Here is a collection of projects I have completed as an electrical engineering student including personal, academic, and research projects.</p>
         </section>
         <section id="projects" aria-label="Projects">
-            <article class="project lime">
-                <img src="images/mlcc.png" alt="MLCC characterization experiment">
+            <article class="project lime" id="mlcc" tabindex="-1">
+                <div class="project-media" role="group" aria-label="MLCC project images">
+                    <img src="images/mlcc.png" alt="MLCC characterization experiment">
+                    <div class="project-image" data-photo="mlcc2.png">
+                        <span>MLCC PROJECT</span>
+                        <span class="image-label">Second project picture coming soon</span>
+                    </div>
+                </div>
                 <div>
                     <p class="current-project"><span aria-hidden="true">★</span> Current Project</p>
                     <h3>MLCC Nonlinearity Characterization</h3>
@@ -41,7 +59,7 @@
                     <p class="tags">Python · Signal Processing · Instrumentation</p>
                 </div>
             </article>
-            <article class="project green">
+            <article class="project green" id="noise-spectrometer" tabindex="-1">
                 <div class="project-gallery" role="group" aria-label="Noise spectrometer images">
                     <figure>
                         <a href="images/noise-spectrometer1.png"><img src="images/noise-spectrometer1.png" alt="Noise spectrometer time domain signal" loading="lazy"></a>
@@ -72,7 +90,7 @@
                     <p class="tags">Python · Analog Design · FFT · Instrumentation</p>
                 </div>
             </article>
-            <article class="project blue project-motor">
+            <article class="project blue project-motor" id="robot-motor-control" tabindex="-1">
                 <div>
                     <h3>Closed-Loop Robot Motor Control</h3>
                     <p>Implemented 555 timer PWM generation and encoder feedback for speed sensing, an I-compensator, motor direction control, and motor driver circuits in a closed-loop system. Built and debugged hardware with benchtop oscilloscopes and SPICE simulation.</p>
@@ -96,7 +114,7 @@
                     </figure>
                 </div>
             </article>
-            <article class="project synthesizer">
+            <article class="project synthesizer" id="digital-synthesizer" tabindex="-1">
                 <div class="project-media">
                     <figure>
                         <video controls playsinline preload="metadata" aria-label="Digital synthesizer demo">
@@ -112,7 +130,7 @@
                     <p>Through the project, I gained experience with FPGA development and digital signal generation.</p>
                 </div>
             </article>
-            <article class="project blue">
+            <article class="project blue" id="nasa-payload" tabindex="-1">
                 <div class="project-gallery" role="group" aria-label="NASA Space Grant Payload images">
                     <figure>
                         <a href="images/payload1.png"><img src="images/payload1.png" alt="NASA Space Grant Payload photo 1" loading="lazy"></a>
@@ -127,7 +145,7 @@
                     <p>We also measured radiation using Geiger counters and used the same chemical reaction found in hand warmers as a heating element to regulate the temperature of electronic components at high altitudes.</p>
                 </div>
             </article>
-            <article class="project lcd-game">
+            <article class="project lcd-game" id="lcd-game" tabindex="-1">
                 <div class="project-media">
                     <figure>
                         <video controls playsinline preload="metadata" aria-label="LCD side scrolling game demo">
@@ -143,7 +161,7 @@
                     <p>This project strengthened my experience with embedded programming, display control, I2C communication, and user input handling.</p>
                 </div>
             </article>
-            <article class="project green">
+            <article class="project green" id="midi-keyboard" tabindex="-1">
                 <div class="project-media">
                     <img src="images/MIDI2.jpg" alt="Polyphonic MIDI keyboard" loading="lazy">
                     <figure>
@@ -169,7 +187,7 @@
         </section>
         <section id="resume" aria-labelledby="resume-title">
             <h2 id="resume-title">Resume</h2>
-            <a class="button" href="Allyson_Costa_Resume.pdf" target="_blank" rel="noopener">View Resume (PDF)</a>
+            <a class="button" href="Allyson_Costa_Resume-2.pdf" target="_blank" rel="noopener">View Resume (PDF)</a>
         </section>
         <section id="contact" aria-labelledby="contact-title">
             <h2 id="contact-title">Contact</h2>
